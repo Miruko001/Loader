@@ -1,19 +1,16 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-
 local Window = Fluent:CreateWindow({
-    Title = "Miruko Loader",
-    SubTitle = "",
+    Title = "Loader",
+    SubTitle = "By Miruko Official",
     TabWidth = 160,
     Size = UDim2.fromOffset(500, 350),
     Acrylic = true,
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl
 })
-
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "box" })
 }
-
 Tabs.Main:AddButton({
     Title = "Devils Market",
     Description = "",
@@ -24,9 +21,9 @@ Tabs.Main:AddButton({
             Content = "",
             Duration = 5
         })
+        Fluent:Destroy()
     end
 })
-
 Tabs.Main:AddButton({
     Title = "Robfes 2026",
     Description = "",
@@ -37,20 +34,20 @@ Tabs.Main:AddButton({
             Content = "",
             Duration = 5
         })
+        Fluent:Destroy()
     end
 })
-
 Tabs.Main:AddButton({
-    Title = "CrookHaven WC",
+    Title = "CrookHaven Wonder Chase",
     Description = "",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/CrookHaven-WC/refs/heads/main/MirukoOfficial"))()
         Fluent:Notify({
-            Title = "Miruko Loader",
+            Title = "",
             Content = "",
             Duration = 5
         })
+        Fluent:Destroy()
     end
 })
-
 Window:SelectTab(1)

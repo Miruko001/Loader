@@ -2,7 +2,7 @@ local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/
 
 local Window = Fluent:CreateWindow({
     Title = "Miruko Loader",
-    SubTitle = "By Miruko Official",
+    SubTitle = "",
     TabWidth = 160,
     Size = UDim2.fromOffset(500, 350),
     Acrylic = true,

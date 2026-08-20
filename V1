@@ -1,0 +1,56 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "Miruko Loader",
+    SubTitle = "By Miruko Official",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(500, 350),
+    Acrylic = true,
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl
+})
+
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main", Icon = "box" })
+}
+
+Tabs.Main:AddButton({
+    Title = "Devils Market",
+    Description = "",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/DevilsMarketBeta/refs/heads/main/v1"))()
+        Fluent:Notify({
+            Title = "",
+            Content = "",
+            Duration = 5
+        })
+    end
+})
+
+Tabs.Main:AddButton({
+    Title = "Robfes 2026",
+    Description = "",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/--Summer-2026/refs/heads/main/X"))()
+        Fluent:Notify({
+            Title = "",
+            Content = "",
+            Duration = 5
+        })
+    end
+})
+
+Tabs.Main:AddButton({
+    Title = "CrookHaven WC",
+    Description = "",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/CrookHaven-WC/refs/heads/main/MirukoOfficial"))()
+        Fluent:Notify({
+            Title = "Miruko Loader",
+            Content = "",
+            Duration = 5
+        })
+    end
+})
+
+Window:SelectTab(1)

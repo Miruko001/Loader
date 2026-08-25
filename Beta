@@ -19,7 +19,7 @@ local Tabs = {
 }
 
 Tabs.WonderChase:AddButton({
-    Title = "CrookHaven",
+    Title = "Crook Haven",
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)

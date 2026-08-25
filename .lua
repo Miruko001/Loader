@@ -29,7 +29,7 @@ Tabs.WonderChase:AddButton({
 })
 
 Tabs.WonderChase:AddButton({
-    Title = "Match Of The Day",
+    Title = "Match Of The Day ( Not Working )",
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)

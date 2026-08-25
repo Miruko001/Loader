@@ -23,7 +23,7 @@ Tabs.WonderChase:AddButton({
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/CrookHaven-WC/refs/heads/main/MirukoOfficial"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/CrookHaven-WC/refs/heads/main/MirukoOfficial"))()
         Fluent:Destroy()
     end
 })
@@ -33,7 +33,7 @@ Tabs.WonderChase:AddButton({
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/Match-Of-The-Day-Wonder-Chase/refs/heads/main/.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/Match-Of-The-Day-Wonder-Chase/refs/heads/main/.lua"))()
         Fluent:Destroy()
     end
 })
@@ -43,7 +43,7 @@ Tabs.DevilsMarket:AddButton({
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/DevilsMarketBeta/refs/heads/main/v1"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/DevilsMarketBeta/refs/heads/main/v1"))()
         Fluent:Destroy()
     end
 })
@@ -53,7 +53,7 @@ Tabs.Robfes:AddButton({
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/--Summer-2026/refs/heads/main/X"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/--Summer-2026/refs/heads/main/X"))()
         Fluent:Destroy()
     end
 })
@@ -63,7 +63,7 @@ Tabs.PunchSim:AddButton({
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/Punch-Simulator/refs/heads/main/Beta"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/Punch-Simulator/refs/heads/main/Beta"))()
         Fluent:Destroy()
     end
 })

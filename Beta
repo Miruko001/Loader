@@ -1,113 +1,87 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-
 local Window = Fluent:CreateWindow({
     Title = "Loader",
     SubTitle = "By Miruko Official",
     TabWidth = 160,
-    Size = UDim2.fromOffset(500, 350),
+    Size = UDim2.fromOffset(580, 460),
     Acrylic = true,
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl
 })
 
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "box" })
+    WonderChase = Window:AddTab({ Title = "Wonder Chase", Icon = "play" }),
+    DevilsMarket = Window:AddTab({ Title = "Devils Market", Icon = "ghost" }),
+    Robfes = Window:AddTab({ Title = "Robfes 2026", Icon = "sun" }),
+    PunchSim = Window:AddTab({ Title = "Punch-Simulator", Icon = "swords" }),
+    Discord = Window:AddTab({ Title = "Discord", Icon = "message-circle" }),
+    YouTube = Window:AddTab({ Title = "YouTube", Icon = "video" })
 }
 
-Tabs.Main:AddButton({
-    Title = "Devils Market",
-    Description = "",
+Tabs.WonderChase:AddButton({
+    Title = "CrookHaven WC",
     Callback = function()
-        Fluent:Notify({
-            Title = "Miruko Loader",
-            Content = "Loading... this may take a while",
-            Duration = 6
-        })
-        task.wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/DevilsMarketBeta/refs/heads/main/v1"))()
-        Fluent:Destroy()
-    end
-})
-
-Tabs.Main:AddButton({
-    Title = "Robfes 2026",
-    Description = "",
-    Callback = function()
-        Fluent:Notify({
-            Title = "Miruko Loader",
-            Content = "Loading... this may take a while",
-            Duration = 6
-        })
-        task.wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/--Summer-2026/refs/heads/main/X"))()
-        Fluent:Destroy()
-    end
-})
-
-Tabs.Main:AddButton({
-    Title = "Punch-Simulator",
-    Description = "",
-    Callback = function()
-        Fluent:Notify({
-            Title = "Miruko Loader",
-            Content = "Loading... this may take a while",
-            Duration = 6
-        })
-        task.wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/Punch-Simulator/refs/heads/main/Beta"))()
-        Fluent:Destroy()
-    end
-})
-
-Tabs.Main:AddButton({
-    Title = "CrookHaven Wonder Chase",
-    Description = "",
-    Callback = function()
-        Fluent:Notify({
-            Title = "Miruko Loader",
-            Content = "Loading... this may take a while",
-            Duration = 6
-        })
+        Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/CrookHaven-WC/refs/heads/main/MirukoOfficial"))()
         Fluent:Destroy()
     end
 })
 
-Tabs.Main:AddButton({
-    Title = "Copy Discord",
-    Description = "",
+Tabs.WonderChase:AddButton({
+    Title = "Match Of The Day WC",
     Callback = function()
-        pcall(function()
-            setclipboard("https://discord.gg/zZxGCW7dZA")
-        end)
-        Fluent:Notify({
-            Title = "Miruko Official",
-            Content = "Discord link copied",
-            Duration = 4
-        })
+        Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
+        task.wait(0.3)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/Match-Of-The-Day-Wonder-Chase/refs/heads/main/.lua"))()
+        Fluent:Destroy()
     end
 })
 
-Tabs.Main:AddButton({
-    Title = "Copy YouTube",
-    Description = "",
+Tabs.DevilsMarket:AddButton({
+    Title = "Devils Market",
     Callback = function()
-        pcall(function()
-            setclipboard("https://www.youtube.com/@MirukoOfficial")
-        end)
-        Fluent:Notify({
-            Title = "Miruko Official",
-            Content = "YouTube link copied",
-            Duration = 4
-        })
+        Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
+        task.wait(0.3)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/DevilsMarketBeta/refs/heads/main/v1"))()
+        Fluent:Destroy()
+    end
+})
+
+Tabs.Robfes:AddButton({
+    Title = "Robfes 2026",
+    Callback = function()
+        Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
+        task.wait(0.3)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/--Summer-2026/refs/heads/main/X"))()
+        Fluent:Destroy()
+    end
+})
+
+Tabs.PunchSim:AddButton({
+    Title = "Punch-Simulator",
+    Callback = function()
+        Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
+        task.wait(0.3)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/neizofficial/Punch-Simulator/refs/heads/main/Beta"))()
+        Fluent:Destroy()
+    end
+})
+
+Tabs.Discord:AddButton({
+    Title = "Get Discord Invite Link",
+    callback = function()
+        setclipboard("https://discord.gg/zZxGCW7dZA")
+        Fluent:Notify({Title = "Copied", Content = "Invite link copied", Duration = 3})
+    end
+})
+
+Tabs.YouTube:AddButton({
+    Title = "Youtube Channel",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@MirukoOfficial")
+        Fluent:Notify({Title = "Copied", Content = "YouTube link copied", Duration = 3})
     end
 })
 
 Window:SelectTab(1)
-
-Fluent:Notify({
-    Title = "Miruko Loader",
-    Content = "Some scripts may take longer to load",
-    Duration = 5
-})

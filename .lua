@@ -74,7 +74,7 @@ Tabs.BlowEverythingUp:AddButton({
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/BlowEverythingUp/refs/heads/main/.lua"))()
+       loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/dcf646b9ac888537b4e891139f2f647514c4b4578575d78e99de6d7621c8484e/download"))()
         Fluent:Destroy()
     end
 })

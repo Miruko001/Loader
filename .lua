@@ -14,6 +14,7 @@ local Tabs = {
     DevilsMarket = Window:AddTab({ Title = "Devils Market", Icon = "ghost" }),
     Robfes = Window:AddTab({ Title = "Robfes 2026", Icon = "sun" }),
     PunchSim = Window:AddTab({ Title = "Punch-Simulator", Icon = "swords" }),
+    BlowEverythingUp = Window:AddTab({ Title = "Blow Everything Up", Icon = "bomb" }),
     Discord = Window:AddTab({ Title = "Discord", Icon = "message-circle" }),
     YouTube = Window:AddTab({ Title = "YouTube", Icon = "video" })
 }
@@ -67,6 +68,7 @@ Tabs.PunchSim:AddButton({
         Fluent:Destroy()
     end
 })
+
 Tabs.BlowEverythingUp:AddButton({
     Title = "Blow Everything Up",
     Callback = function()
@@ -79,7 +81,7 @@ Tabs.BlowEverythingUp:AddButton({
 
 Tabs.Discord:AddButton({
     Title = "Get Discord Invite Link",
-    callback = function()
+    Callback = function()
         setclipboard("https://discord.gg/zZxGCW7dZA")
         Fluent:Notify({Title = "Copied", Content = "Invite link copied", Duration = 3})
     end

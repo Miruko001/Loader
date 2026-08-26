@@ -59,11 +59,20 @@ Tabs.Robfes:AddButton({
 })
 
 Tabs.PunchSim:AddButton({
-    Title = "Punch-Simulator",
+    Title = "Punch Simulator",
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/Punch-Simulator/refs/heads/main/Beta"))()
+        Fluent:Destroy()
+    end
+})
+Tabs.BlowEverythingUp:AddButton({
+    Title = "Blow Everything Up",
+    Callback = function()
+        Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
+        task.wait(0.3)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/BlowEverythingUp/refs/heads/main/.lua"))()
         Fluent:Destroy()
     end
 })

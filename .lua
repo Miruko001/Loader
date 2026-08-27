@@ -10,6 +10,7 @@ local Window = Fluent:CreateWindow({
 })
 
 local Tabs = {
+    Fall2 = Window:AddTab({ Title = "Fall 2: Deadpoint", Icon = "mountain" }),
     WonderChase = Window:AddTab({ Title = "Wonder Chase", Icon = "play" }),
     DevilsMarket = Window:AddTab({ Title = "Devils Market", Icon = "ghost" }),
     Robfes = Window:AddTab({ Title = "Robfes 2026", Icon = "sun" }),
@@ -18,6 +19,16 @@ local Tabs = {
     Discord = Window:AddTab({ Title = "Discord", Icon = "message-circle" }),
     YouTube = Window:AddTab({ Title = "YouTube", Icon = "video" })
 }
+
+Tabs.Fall2:AddButton({
+    Title = "Fall 2: Deadpoint",
+    Callback = function()
+        Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
+        task.wait(0.3)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/Fall2DeadPoint/refs/heads/main/.lua"))()
+        Fluent:Destroy()
+    end
+})
 
 Tabs.WonderChase:AddButton({
     Title = "Crook Haven",
@@ -74,7 +85,7 @@ Tabs.BlowEverythingUp:AddButton({
     Callback = function()
         Fluent:Notify({Title = "Miruko Loader", Content = "Executing...", Duration = 5})
         task.wait(0.3)
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/BlowEverythingUp-Open-Source-/refs/heads/main/.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Miruko001/BlowEverythingUp-Open-Source-/refs/heads/main/.lua"))()
         Fluent:Destroy()
     end
 })
